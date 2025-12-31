@@ -1,0 +1,16 @@
+{
+  "name": "Syrian Currency Converter",
+  "short_name": "Currency",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#2c5364",
+  "theme_color": "#2c5364",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
