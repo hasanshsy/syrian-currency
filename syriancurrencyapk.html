@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Syrian Currency Converter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;font-family:"Cairo",sans-serif}
+body{
+margin:0;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center
+}
+.app{
+background:#fff;
+width:100%;
+max-width:420px;
+border-radius:18px;
+padding:28px;
+box-shadow:0 25px 50px rgba(0,0,0,.3)
+}
+.header{text-align:center;margin-bottom:20px}
+.header h1{margin:0;font-size:22px}
+.header p{font-size:14px;color:#6b7280}
+.lang-switch{text-align:center;margin-bottom:15px}
+.lang-switch button{
+border:none;
+background:#2563eb;
+color:#fff;
+padding:6px 14px;
+border-radius:8px;
+cursor:pointer;
+font-size:13px
+}
+label{font-size:14px;color:#374151;margin-bottom:6px;display:block}
+input{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:1px solid #d1d5db;
+font-size:16px;
+margin-bottom:12px
+}
+input[readonly]{background:#f9fafb}
+.copy-btn{
+width:100%;
+background:#10b981;
+border:none;
+color:#fff;
+padding:10px;
+border-radius:10px;
+font-size:15px;
+cursor:pointer
+}
+.copy-btn:active{opacity:.8}
+.info{
+background:#f1f5f9;
+padding:10px;
+border-radius:10px;
+font-size:13px;
+text-align:center;
+margin:15px 0
+}
+.footer{
+border-top:1px solid #e5e7eb;
+padding-top:12px;
+text-align:center;
+font-size:12px;
+color:#6b7280
+}
+.footer strong{color:#111827}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+<div class="header">
+<h1 id="title">محول العملة السورية</h1>
+<p id="subtitle">إزالة صفرين من القيمة</p>
+</div>
+
+<div class="lang-switch">
+<button onclick="toggleLang()">English / عربي</button>
+</div>
+
+<label id="oldLabel">المبلغ بالعملة القديمة</label>
+<input type="number" id="old">
+
+<label id="newLabel">المبلغ بالعملة الجديدة</label>
+<input type="text" id="new" readonly>
+
+<button class="copy-btn" onclick="copyResult()" id="copyBtn">نسخ النتيجة</button>
+
+<div class="info" id="info">
+يتم التحويل تلقائيًا بعد إزالة صفرين
+</div>
+
+<div class="footer">
+تم الإنشاء والتطوير بواسطة <strong>Anas Shameea</strong><br>
+ضمن شركة <strong>MR.Q</strong>
+</div>
+</div>
+
+<script>
+let lang="ar";
+const oldI=document.getElementById("old");
+const newI=document.getElementById("new");
+
+oldI.addEventListener("input",()=>{
+let v=parseFloat(oldI.value);
+newI.value=!isNaN(v)?(v/100).toLocaleString(lang==="ar"?"ar-SY":"en-US"):"";
+});
+
+function copyResult(){
+if(newI.value){
+navigator.clipboard.writeText(newI.value);
+alert(lang==="ar"?"تم نسخ النتيجة":"Result copied");
+}
+}
+
+function toggleLang(){
+lang=lang==="ar"?"en":"ar";
+document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+document.getElementById("title").innerText=lang==="ar"?"محول العملة السورية":"Syrian Currency Converter";
+document.getElementById("subtitle").innerText=lang==="ar"?"إزالة صفرين من القيمة":"Remove two zeros";
+document.getElementById("oldLabel").innerText=lang==="ar"?"المبلغ بالعملة القديمة":"Old Currency Amount";
+document.getElementById("newLabel").innerText=lang==="ar"?"المبلغ بالعملة الجديدة":"New Currency Amount";
+document.getElementById("copyBtn").innerText=lang==="ar"?"نسخ النتيجة":"Copy Result";
+document.getElementById("info").innerText=lang==="ar"?"يتم التحويل تلقائيًا بعد إزالة صفرين":"Conversion is automatic";
+}
+</script>
+
+</body>
+</html>
