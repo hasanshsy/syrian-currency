@@ -5,6 +5,10 @@
 <title>Syrian Currency Converter</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- PWA -->
+<link rel="manifest" href="/syrian-currency/manifest.json">
+<meta name="theme-color" content="#2c5364">
+
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -135,8 +139,12 @@ document.getElementById("newLabel").innerText=lang==="ar"?"المبلغ بالع
 document.getElementById("copyBtn").innerText=lang==="ar"?"نسخ النتيجة":"Copy Result";
 document.getElementById("info").innerText=lang==="ar"?"يتم التحويل تلقائيًا بعد إزالة صفرين":"Conversion is automatic";
 }
+
+/* Service Worker */
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/syrian-currency/service-worker.js");
+}
 </script>
 
 </body>
 </html>
-
