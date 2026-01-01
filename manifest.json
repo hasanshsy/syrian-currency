@@ -1,14 +1,15 @@
 {
   "name": "Syrian Currency Converter",
   "short_name": "Currency",
-  "start_url": ".",
+  "description": "Convert Syrian currency by removing two zeros",
+  "start_url": "/syrian-currency/",
   "display": "standalone",
   "background_color": "#2c5364",
   "theme_color": "#2c5364",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "/syrian-currency/icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
