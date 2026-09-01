@@ -1,0 +1,24 @@
+{
+  "owner":"hasanshsy",
+  "contact":{"display":"0953772122","whatsapp":"963953772122"},
+  "hero":{"ar":{"title":"حلول طاقة مصمّمة للمشروع، وليست مجرد بيع معدات.","lead":"من دراسة الأحمال واختيار التجهيزات إلى الإشراف والتشغيل، أعمل على حلول الطاقة الشمسية والتخزين والمشاريع ذات الأحمال الكبيرة."},"en":{"title":"Energy solutions engineered for the project — not just equipment sales.","lead":"From load studies and equipment selection to supervision and commissioning, I work on solar, storage and high-load energy projects."}},
+  "services":[
+    {"ar":"دراسة الأحمال والتصميم","en":"Load Study & Design"},{"ar":"حلول تخزين الطاقة","en":"Energy Storage"},{"ar":"الطاقة الشمسية والهجينة","en":"Solar & Hybrid Systems"},{"ar":"حلول المصانع والمعامل","en":"Industrial Projects"},{"ar":"اللوحات والحماية","en":"Panels & Protection"},{"ar":"الإشراف والتشغيل","en":"Supervision & Commissioning"}
+  ],
+  "projects":[
+    {"id":"al-durra","ar":"معمل الدرة","en":"Al Durra Factory","sectorAr":"مشروع صناعي","sectorEn":"Industrial project","descAr":"مشروع صناعي بارز ضمن خبرة الفريق الهندسي. نعرض المعلومات المؤكدة فقط إلى حين إضافة توثيق المشروع من لوحة الإدارة.","descEn":"A notable industrial reference within the engineering team’s experience. Only confirmed information is published until project-specific documentation is added."},
+    {"id":"sidi-hisham","ar":"معمل سيدي هشام","en":"Sidi Hisham Factory","sectorAr":"مشروع صناعي","sectorEn":"Industrial project","descAr":"مرجع صناعي ضمن خبرة الفريق، دون نشر قدرات أو معدات غير موثقة.","descEn":"An industrial reference within the team’s experience, without publishing unverified capacities or equipment."},
+    {"id":"unipharma","ar":"مصنع يونيفارما للأدوية","en":"Unipharma Pharmaceutical Factory","sectorAr":"صناعة دوائية","sectorEn":"Pharmaceutical industry","descAr":"مرجع ضمن قطاع صناعي حساس لاستمرارية الطاقة. يتم نشر المعلومات المؤكدة فقط.","descEn":"A reference in a sector where power continuity is critical. Only confirmed information is published."}
+  ],
+  "portfolio":[
+    {"id":"energy-1","cat":"energy","img":"assets/images/portfolio/solar-installation.webp","ar":"منظومة طاقة وتخزين مركبة","en":"Installed Energy & Storage System","metaAr":"بطارية • إنفيرتر • تجهيزات كهربائية","metaEn":"Battery • Inverter • Electrical equipment"},
+    {"id":"panel-1","cat":"panels","img":"assets/images/portfolio/control-panel-2025.webp","ar":"تنفيذ لوحة كهربائية صناعية","en":"Industrial Electrical Panel Build","metaAr":"قواطع • كونتاكتورات • تنظيم توصيلات","metaEn":"Breakers • Contactors • Organized wiring"},
+    {"id":"energy-2","cat":"energy","img":"assets/images/portfolio/solar-installation.webp","ar":"تفاصيل منظومة الطاقة","en":"Energy System Detail","metaAr":"تنفيذ ميداني حقيقي","metaEn":"Real field installation"},
+    {"id":"panel-2","cat":"panels","img":"assets/images/portfolio/control-panel-2025.webp","ar":"لوحات التحكم والحماية","en":"Control & Protection Panels","metaAr":"تنظيم وحماية وتشغيل","metaEn":"Control • Protection • Operation"}
+  ],
+  "brands":[
+    {"name":"ALHDARA","img":"assets/images/brands/alhdara.webp","ar":"الحضارة","en":"Energy & Electrical Solutions"},
+    {"name":"Felicity Solar / ESS","img":"assets/images/brands/felicityess.webp","ar":"حلول تخزين وطاقة شمسية","en":"Solar & Energy Storage"},
+    {"name":"Deye","img":"assets/images/brands/deye.webp","ar":"إنفيرترات وأنظمة طاقة","en":"Inverters & Energy Systems"}
+  ]
+}

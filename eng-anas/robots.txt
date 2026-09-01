@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /eng-anas/admin/
 Sitemap: https://hasanshsy.github.io/syrian-currency/eng-anas/sitemap.xml
