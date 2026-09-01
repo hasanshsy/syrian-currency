@@ -1,0 +1,11 @@
+{
+  "name": "ENG. ANAS | Energy Solutions & Projects",
+  "short_name": "ENG. ANAS",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#071a33",
+  "lang": "ar",
+  "dir": "rtl"
+}
